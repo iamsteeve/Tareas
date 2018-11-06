@@ -64,9 +64,12 @@ class tareasController extends AppController
 
 		if (!empty($registro)) {
 			$tarea->eliminarPorId($id);
-			$this->redirect(
-				array("controller"=>"tareas")
-			);
+
+			$this->_messages->success(
+					'Tarea eliminada correctamente', 
+					$this->redirect(array(
+						"controller"=>"tareas"))
+				);
 		}
 
 	}

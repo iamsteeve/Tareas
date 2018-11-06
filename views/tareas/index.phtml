@@ -54,7 +54,7 @@
 
 			<a href="<?php echo APP_URL."tareas/editar/".$tarea["tareas"]["id"]; ?>"><span class="glyphicon glyphicon-edit"></span></a>
 				  
-			<a href="<?php echo APP_URL."tareas/eliminar/".$tarea["tareas"]["id"]; ?>"><span class="glyphicon glyphicon-trash"></span></a>
+			<a href="<?php echo APP_URL."tareas/eliminar/".$tarea["tareas"]["id"]; ?>" class="confirmation"><span class="glyphicon glyphicon-trash"></span></a>
 				
 			<?php
 					if ($tarea["tareas"]["status"]==1) { ?>
